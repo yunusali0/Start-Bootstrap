@@ -1,0 +1,391 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+.row div[class*="col-"]{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+hr{
+    box-sizing: content-box;
+    overflow: visible;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-3 ul li{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.navBar{
+    width: 100%;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header{
+    background-color: #2d3e50;
+    width: 100%;
+}
+
+.logo{
+    padding: 30px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu{
+    padding: 30px 0;
+}
+.menu li a{
+    color: white;
+    font-size: 16px;
+    margin-left: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 100%;
+}
+
+.profile{
+    background-color: #18bd9c;
+    text-align: center;
+}
+
+.profile img{
+    padding: 50px;
+    margin-top: 25px;
+}
+
+.profile h1{
+    font-size: 76px;
+    font-weight: bold;
+    padding: 0 20px 20px;
+    color: white;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.profile p{
+    font-size: 28px;
+    color: white;
+    padding: 25px 0 75px;
+}
+
+hr.white{
+    height: 4px;
+    width: 15%;
+    background-color: white;
+    border: none;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+hr.black{
+    height: 4px;
+    width: 15%;
+    background-color: #2c3e50;
+    border: none;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+hr.white::after{
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #18bd9c;
+    padding: 7px;
+}
+
+hr.black::after{
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #2c3e50;
+    background-color: white;
+    padding: 7px;
+}
+
+
+.portfolio{
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.portfolio h1{
+    font-size: 48px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.portfolio .port{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.portfolio .box{
+    width: 100%;
+    padding: 25px;
+    position: relative;
+}
+
+.portfolio .box img{
+    width: 100%;
+    position: relative;
+}
+
+.portfolio .box .link{
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 25px solid white;
+}
+
+.portfolio .box .link .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.portfolio .box .link i{
+    font-size: 65px;
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.portfolio .box .link:hover .overlay{
+    visibility: visible;
+    background-color: #18bd9cc5;
+    transition: all ease 0.5s;
+}
+
+.about{
+    width: 100%;
+    background-color: #18bd9c;
+    text-align: center;
+}
+
+.about h1{
+    padding: 75px 0 0;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.about p{
+    font-size: 20px;
+    color: white;
+    padding: 25px 20px 25px;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.about a{
+    padding: 16px 28px;
+    margin-bottom: 75px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
+
+.about i{
+    margin-right: 10px;
+}
+
+.about a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.contact{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 100%;
+}
+
+.contact h1{
+    font-size: 48px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact .inputs{
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    padding: 25px 0 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.contact a{
+    font-size: 18px;
+    padding: 20px 25px;
+    margin-top: 30px;
+    background-color: #18bd9c;
+    border: 1px solid #18bd9c;
+    border-radius: 4px;
+    color: white;
+}
+
+.contact a:hover{
+    background-color: #0e8069;
+    transition: 0.5s;
+}
+
+.social{
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 75px 0;
+}
+
+.social .info{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.social .location{
+    color: white;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.social .location h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social .location p{
+    font-size: 20px;
+    line-height: 30px;  
+    margin-top: 15px;
+}
+
+.social .buttons{
+    text-align: center;
+    padding: 0 30px;
+}
+
+.social .buttons h1{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social .buttons li{
+    display: inline;
+    font-size: 22px;
+}
+
+.social .buttons a{
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    line-height: 50px;
+    border-radius: 100%;
+    margin: 15px 3px;
+}
+
+.social .buttons a:hover{
+    color: #2c3e50;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.social .free{
+    text-align: center;
+    padding: 0 18px;
+}
+
+.social .free h1{
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+}
+
+.social .free p{
+    font-size: 20px;
+    line-height: 30px;  
+    margin-top: 15px;
+    color: white;
+}
+
+.social .free a{
+    color: #18bd9c;
+}
